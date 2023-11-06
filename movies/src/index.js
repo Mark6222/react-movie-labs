@@ -20,11 +20,11 @@ const App = () => {
         <Route exact path="/movies/favorites" element={<FavoriteMoviesPage />} />
         <Route path="/movies/:id" element={<MoviePage />} />
         <Route path="/" element={<HomePage />} />
-        <Route path="*" element={ <Navigate to="/" /> } />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
 };
 
-const rootElement = createRoot( document.getElementById("root") )
+const rootElement = createRoot(document.getElementById("root"))
 rootElement.render(<App />);
